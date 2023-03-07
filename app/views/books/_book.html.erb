@@ -1,0 +1,9 @@
+<% @items.each do |item| %>
+  <%= link_to item.name, item.url %>
+  <% item["mediumImageUrls"].each do |image| %>
+    <%= image_tag image %>
+  <% end %>
+  <%#= book.author %>
+  <%#= book.item_caption %>
+  <%#= link_to (image_tag(book.medium_image_url)), book.item_url %>
+<% end %>
